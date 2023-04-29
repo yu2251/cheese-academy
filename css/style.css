@@ -1,0 +1,562 @@
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body {
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+.wrapper {
+	max-width: 960px;
+	margin: auto;
+	text-align: center;
+}
+
+/*head*/
+.rogo_ {
+	width: 100px;
+}
+
+.header-wrapper {
+	display: flex;
+	align-items: center;
+	height: 80px;
+	border: solid;
+	border-color: #efefef;
+	justify-content: space-between;
+}
+
+.nav-list {
+	display: flex;
+	padding: 1%;
+}
+
+.nav-item {
+	margin-left: 48px;
+	text-transform: uppercase;
+	font-size: 21px;
+	color: #222222;
+}
+
+a {
+	color: #222222;
+}
+
+.site-title {
+	font-size: 48px;
+	font-weight: bold;
+	color: white;
+	margin: 0 0 40px;
+	text-align: center;
+}
+
+.site-title2 {
+	font-size: 36px;
+	color: white;
+	text-align: center
+}
+
+.box {
+	background: url(../img/mainbg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	height: 50vh;
+	padding: 50px;
+}
+
+.rogo_ {
+	width: 200px;
+	margin-left: 5%;
+}
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*about*/
+.academy-wrapper {
+	margin: 120px 0 80px;
+	text-align: center;
+}
+
+.about_title {
+	font-size: 24px;
+	color: #ffd61a;
+	margin: 0 0 24px;
+	text-transform: uppercase;
+}
+
+
+.academy-img {
+	display: flex;
+	justify-content: center;
+}
+
+.about-contents {
+	text-align: center;
+}
+
+.about-contents-p1 {
+	margin: 64px 0 40px;
+}
+
+.about-contents-p2 {
+	margin: 0 0 40px;
+}
+
+.about-contents-p3 {
+	margin: 0 0 80px;
+}
+
+.wrap {
+	display: flex;
+	align-items: center;
+	height: 150px;
+	overflow: hidden;
+}
+
+.slideshow {
+	display: flex;
+	animation: loop-slide 20s infinite linear 1s both;
+}
+
+@keyframes loop-slide {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.slide-paused:hover .slideshow {
+	animation-play-state: paused;
+}
+
+.content {
+	width: 226px;
+	height: 150px;
+}
+
+.content:nth-child(1) {
+	background: url(../img/about_01.jpg);
+	background-size: contain;
+}
+
+.content:nth-child(2) {
+	background: url(../img/about_02.jpg);
+	background-size: contain;
+}
+
+.content:nth-child(3) {
+	background: url(../img/about_03.jpg);
+	background-size: contain;
+}
+
+.content:nth-child(4) {
+	background: url(../img/about_04.jpg);
+	background-size: contain;
+}
+
+/*---------------------
+course
+---------------------*/
+.course_title {
+	font-size: 24px;
+	text-align: center;
+	color: #222222;
+	margin: 0 0 24px;
+	text-transform: uppercase;
+}
+
+.course-wrapper {
+	margin: 64px 0 64px;
+	width: 960px;
+}
+
+.course-contents {
+	margin-bottom: 64px;
+	text-align: center;
+}
+
+.c_box1 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.c_box1_img {
+	width: 50%;
+}
+
+.c_box1_P {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	background-color: #f5f5f5;
+	justify-content: center;
+}
+
+.c_box1_h {
+	padding-left: 48px;
+	margin-bottom: 40px;
+	font-size: 24px;
+}
+
+.c_box1_p1 {
+	padding-left: 48px;
+	font-size: 14px;
+}
+
+.c_box1_P2 {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #f5f5f5;
+}
+
+.c_box1_h2 {
+	padding-left: 52px;
+	margin-bottom: 40px;
+	font-size: 24px;
+}
+
+.c_box1_p2 {
+	padding-left: 52px;
+	font-size: 14px;
+
+}
+
+/*---------------------
+news
+---------------------*/
+.news_title {
+	font-size: 24px;
+	font-weight: bold;
+	color: #ffd61a;
+	text-transform: uppercase;
+}
+
+.news_title2 {
+	font-size: 20px;
+}
+
+.news-wrapper {
+	margin: auto;
+	max-width: 960px;
+}
+
+.news {
+	padding: 64px;
+}
+
+.news_list {
+	display: flex;
+	margin: 0 0 64px;
+}
+
+.news_list div {
+	margin: 10px;
+}
+
+.news_item {
+	width: 100%;
+}
+
+.n_box {
+	display: flex;
+	justify-content: center;
+}
+
+.news_title2 {
+	margin: 0 0 64px;
+}
+
+.news_pizza {
+	margin: 0 0 32px;
+}
+
+.news_img {
+	width: 300px;
+}
+
+.news_contents {
+	text-align: left;
+}
+
+.news_heading1 {
+	margin: 0 0 24px;
+}
+
+
+.btn {
+	display: block;
+	width: 300px;
+	height: 60px;
+	margin: auto;
+	padding: 11.5px 0;
+	background-color: #FFD700;
+	color: #fff;
+	font-size: 21px;
+	text-align: center;
+}
+
+/*---------------------
+access
+-----.----------------*/
+
+.access-wrapper {
+	text-align: center;
+	background-color: #f5f5f5;
+}
+
+.access_title {
+	padding: 64px 0 24px;
+	font-size: 24px;
+	color: #222222;
+	text-transform: uppercase;
+}
+
+.access_subtitle {
+	padding-bottom: 64px;
+}
+
+iframe {
+	aspect-ratio: 16/9;
+	width: 100%;
+	height: 300px;
+	border: none;
+}
+
+.address {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 280px;
+	margin-right: 220px;
+	padding: 64px 0 80px 0px;
+	text-align: center;
+
+}
+
+.add-title {
+	display: inline-block;
+	width: 100px;
+	margin: 0 48px 24px 0;
+	text-align: left;
+}
+
+.add-item {
+	display: inline-block;
+	width: 260px;
+	margin: 0 48px 24px 0;
+	text-align: left;
+}
+
+
+/*----------------------
+contact
+---------------------*/
+.contact {
+	padding: 80px 0 64px;
+}
+
+.contact_title {
+	font-size: 24px;
+	color: #222222;
+	margin: 0 0 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.contact_subtitle {
+	margin: 0 0 64px;
+	text-align: center;
+}
+
+.contact_contents {
+	margin: 0 0 32px;
+	text-align: center;
+}
+
+.contact_contents2 {
+	padding: 0 0 80px;
+	text-align: center;
+}
+
+.contact-wrapper {
+	margin: auto;
+	text-align: center;
+}
+
+.form-inner {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 165px 40px 165px;
+}
+
+.form-title {
+	width: 120px;
+	margin: 0 120px 0 0;
+	padding: 8px 0 0 0;
+	font: bold;
+	text-align: left;
+}
+
+.form-title1 {
+	width: 120px;
+	margin: 0 120px 0 0;
+	padding: 8px 0 0 0;
+	font: bold;
+	text-align: left;
+
+}
+
+.form-title2 {
+	width: 120px;
+	margin: 0 120px 16px 0;
+	padding: 8px 0 0 0;
+	font: bold;
+	text-align: left;
+
+}
+
+.check-radio {
+	padding: 8px 0 0 0;
+}
+
+.form-item {
+	width: 388px;
+	margin: 0 0 24px;
+}
+
+
+
+.form-item1 {
+	width: 388px;
+	margin: 0 0 40px;
+}
+
+.form-item2 {
+	width: 388px;
+	margin: 0 0 32px;
+}
+
+.form-parts {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 8px;
+	border: solid 1px #bfbfbf;
+	font-size: 14px;
+}
+
+.btn2 {
+	display: block;
+	width: 298px;
+	height: 54px;
+	margin: auto;
+	padding: 11.5px 0;
+	background-color: #FFD700;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+}
+
+.form-label {
+	margin: 0 40px 24px 0;
+	font-size: 14.38px;
+}
+
+.form-label2 {
+	margin: 0 0 24px 0;
+	font-size: 14px;
+}
+
+input[type*="checkbox"] {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 24px;
+	height: 24px;
+	margin: 0 40px 0 0;
+	border: solid 1px #f0ede5;
+	border-radius: 15%;
+	vertical-align: -6px;
+}
+
+input[type*="checkbox"]:checked {
+	background-color: #f0ede5;
+}
+
+/*---------------------*
+ footer
+---------------------*/
+.footer {
+	position: relative;
+	padding: 32px 0;
+	background-color: #707070;
+}
+
+.footer .wrapper {
+	padding: relative;
+}
+
+.copyrights {
+	color: #fff;
+}
+
+.icon-up {
+	color: #fff;
+}
+
+.btn-pagetop {
+	position: absolute;
+	top: -60px;
+	right: 50px;
+	display: block;
+	width: 60px;
+	height: 60px;
+	background-color: #707070;
+
+}
+
+/*
+---------------------*/
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.text_center {
+	text-align: center;
+}
